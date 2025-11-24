@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Python/JS Кликер</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding-top: 50px;
+        }
+        #score-display {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        #clicker-button {
+            padding: 20px 40px;
+            font-size: 2em;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .upgrade-button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 Кликер с прокачками</h1>
+    
+    <div id="score-display">Очки: 0</div>
+    <div id="click-power-display">Сила клика: 1</div>
+    
+    <button id="clicker-button" onclick="handle_click()">Клик!</button>
+    
+    <h2>Прокачки</h2>
+    <div id="upgrades">
+        <button class="upgrade-button" onclick="buy_upgrade(1)">
+            Сила +1 (Цена: 10)
+        </button>
+        <button class="upgrade-button" onclick="buy_upgrade(5)">
+            Сила +5 (Цена: 50)
+        </button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
